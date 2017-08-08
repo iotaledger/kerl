@@ -9,7 +9,7 @@ Kerl is used in IOTA for the following tasks:
 
 | Functionality | Curl     | Kerl   |
 | ------------- |:--------:| :-----:|
-|Address generation |      | V |
+|Address generation |      | V^ |
 |Signature generation|     | V |
 |Signature verification| * | V |
 |Essence calculation (bundleHash)| | V |
@@ -18,6 +18,8 @@ Kerl is used in IOTA for the following tasks:
 |Milestone verification| V |   |
 
 _* Curl is used to verify spending from snapshot addresses._
+
+_^ CheckSums are calculated using the **last** 9 trytes._ 
 
 ---
 ### Keccak implementation:
