@@ -19,17 +19,24 @@ Kerl is used in IOTA for the following tasks:
 
 _* Curl is used to verify spending from snapshot addresses._
 
+---
 ### Keccak implementation:
-It is important to follow industry best practices, hence we chose to use the best known crypto suites for each component:
-**Java**: Bouncy Castle Provider: https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
-**JavaScript**:crypto-js: https://www.npmjs.com/package/crypto-js
-**Python**: pysha3 (native hashlib in py >= 3.6): https://pypi.python.org/pypi/pysha3
-**Reference implementation** (in C) : https://github.com/gvanas/KeccakCodePackage
 
 **keccak_384()** is the underlying hash function being used,
 To make sure you are using the same version:
 `keccak_384("Message") = 0c8d6ff6e6a1cf18a0d55b20f0bca160d0d1c914a5e842f3707a25eeb20a279f6b4e83eda8e43a67697832c7f69f53ca`
 
+It is important to follow industry best practices, hence we chose to use the best known crypto suites for each component:
+
+**Java**: Bouncy Castle Provider: https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
+
+**JavaScript**:crypto-js: https://www.npmjs.com/package/crypto-js
+
+**Python**: pysha3 (native hashlib in py >= 3.6): https://pypi.python.org/pypi/pysha3
+
+**Reference implementation** (in C) : https://github.com/gvanas/KeccakCodePackage
+
+---
 ### Kerl implementation:
 Kerl implements the same interface as Curl:
 Trits are absorbed by the sponge function. And later squeezed to provide message digest, derive keys etc.
