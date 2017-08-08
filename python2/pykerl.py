@@ -19,7 +19,8 @@ class Kerl(object):
 
   def absorb(self, trits):
     length = len(trits)
-    #if len(trits) % HASH_LENGTH !=0 throw error
+    if length % 243 != 0:
+        raise Exception("Illegal length")
 
     offset = 0
     while offset < length:
@@ -40,7 +41,9 @@ class Kerl(object):
 
 
   def squeeze(self, trits):
-    # if len(trits) % HASH_LENGTH !=0 throw error
+
+    if len(trits) % 243 != 0:
+      raise Exception("Illegal length")
 
     self.bytes_state = bytearray.fromhex(self.k.hexdigest())
     _bytes = map(lambda x: x if x<=127 else x-256 , self.bytes_state)
