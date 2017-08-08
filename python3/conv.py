@@ -91,8 +91,8 @@ def convertBigintToBytes(big):
                       range(48)]
 
     # big endian and balanced
-    bytesArray = map(lambda x: (x if x <= 0x7F else x - 0x100),
-                     reversed(bytesArrayTemp))
+    bytesArray = list(map(lambda x: (x if x <= 0x7F else x - 0x100),
+                     reversed(bytesArrayTemp)))
 
     if big < 0:
         # 1-compliment

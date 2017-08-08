@@ -60,7 +60,7 @@ class TestKerl(unittest.TestCase):
         for i in range(-128, 128):
             in_bytes = [i] * 48
             trits = conv.convertToTrits(in_bytes)
-            out_bytes = list(conv.convertToBytes(trits))
+            out_bytes = conv.convertToBytes(trits)
 
             self.assertEqual(in_bytes, out_bytes)
 
