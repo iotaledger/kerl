@@ -29,6 +29,7 @@ _^ CheckSums are calculated using the **last** 9 trytes._
 
 ## Kerl implementation examples:
 #### [Java](java/)
+#### [JavaScript](javascript/)
 #### [Python2](python2/)
 #### [Python3](python3/)
 
