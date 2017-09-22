@@ -17,7 +17,8 @@ Kerl is used in IOTA for the following tasks:
 |Transaction Hash      |   | V |   |
 |Milestone verification| V |   |   |
 
-Curl-P-N: N number of rounds 
+_Curl-P-N: N number of rounds_
+
 _^ CheckSums are calculated using the **last** 9 trytes._ 
 
 ---
