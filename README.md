@@ -7,17 +7,18 @@
 ### Kerl integration in IOTA:
 Kerl is used in IOTA for the following tasks:
 
-| Functionality | Curl     | Kerl   |
-| ------------- |:--------:| :-----:|
-|Address generation |      | V^ |
-|Signature generation|     | V |
-|Signature verification| * | V |
-|Essence calculation (bundleHash)| | V |
-|Proof of Work         | V |   |
-|Transaction Hash      | V |   |
-|Milestone verification| V |   |
+| Functionality |Curl-P-27 | Curl-P-81     | Kerl   |
+| ------------- |:--------:|:--------:| :-----:|
+|Address generation |   |      | V^ |
+|Signature generation|   |     | V |
+|Signature verification|   |   | V |
+|Essence calculation (bundleHash)| | | V |
+|Proof of Work         |   | V |   |
+|Transaction Hash      |   | V |   |
+|Milestone verification| V |   |   |
 
-_* Curl is used to verify spending from snapshot addresses._
+Curl-P-N: N number of rounds 
+_^ CheckSums are calculated using the **last** 9 trytes._ 
 
 _^ CheckSums are calculated using the **last** 9 trytes._ 
 
