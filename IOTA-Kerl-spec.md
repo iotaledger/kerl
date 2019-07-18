@@ -15,7 +15,7 @@ Kerl is used in IOTA for the following tasks:
 |Essence calculation (bundleHash)| | | V |
 |Proof of Work         |   | V |   |
 |Transaction Hash      |   | V |   |
-|Milestone verification| V |   |   |
+|Milestone verification|   |   |   | V
 
 _Curl-P-N: N number of rounds_
 
