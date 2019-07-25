@@ -177,11 +177,11 @@ def convertBigintToTrits(bigInt):
 ```
 def convertBigintToBase(bigInt,base,length):
 	is_negative = bigInt < 0
-	absolute_value = abs(bigInt)
+	quotient = abs(bigInt)
 	MAX = is_negative ? base/2 : (base-1)/2
 
 	for i=1:length:
-		quotient,remainder = divmod(absolute_value, base)
+		quotient,remainder = divmod(quotient, base)
 		if remainder > MAX:
 			# Lend 1 to the next place so we can make this digit negative.
 			quotient += 1
